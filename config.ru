@@ -1,3 +1,3 @@
 # config.ru
-require './app'
-run HelloWorldApp
+require './main'
+run Sinatra::Application
