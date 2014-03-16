@@ -28,6 +28,20 @@ get '/logout' do
     redirect '/'   
 end
 
+get '/login' do
+    erb :login
+end
+
+post '/login' do
+    @user = User.authenticate(params[:user][:email], params[:user][:password])
+    if @user.nil?
+        redirect "/login"
+        
+    else
+        loginUser(@user)
+        redirect '/'
+    end
+end
 
 post '/signup' do
     @user= User.new(params[:user])
@@ -39,6 +53,3 @@ post '/signup' do
     end
 end
 
-get '/index' do
-    erb :index
-end
