@@ -1,0 +1,26 @@
+
+    
+<div class="login-screen">
+    <h2>Login to Web App</h2>
+    <p>
+        <%= form('/signup', :post) %>
+        <br>
+
+        First Name:<%= input(:user, :first_name) %>
+        <br>
+        Email Address: <%= input(:user, :email, :size => 40) %>
+        <br>
+        Password: <%= password(:user, :password) %>
+        <br>
+        Confirm Password: <%= password(:user, :password_confirmation) %>
+        <br>
+
+        <%= submit %>
+    </p>
+</div>
+
+<div class="login-help">
+  <p>Forgot your password? <a href="index.html">Click here to reset it</a>.</p>
+</div>
+
+

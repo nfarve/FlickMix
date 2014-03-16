@@ -21,6 +21,16 @@
     color: black;
 }
 
+.name{
+    position: absolute;
+    top:1%;
+    width:15%;
+    right:15%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
 #video_frame{
     position:absolute;
     width:60%;
@@ -100,6 +110,16 @@
     top:1px;
 }
 
+.login-screen{
+    position: absolute;
+    left: 45%;
+}
+
+.login-help{
+    position: absolute;
+    top: 35%;
+    left: 42%;
+}
 
 #footer {
     position: fixed;
